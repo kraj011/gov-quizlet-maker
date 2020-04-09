@@ -1,7 +1,5 @@
 import java.util.*;
 import java.io.*;
-import com.gargoylesoftware.htmlunit.*;
-import com.gargoylesoftware.htmlunit.html.*;
 
 public class QuizletMaker
 {
@@ -61,28 +59,5 @@ public class QuizletMaker
 		
 	    sc2.close();
 	    writer.close();
-
-//        WebClient webClient = new WebClient();
-//        HtmlPage page = webClient.getPage("http://www.quizlet.com/create-set");
-//
-//        HtmlSubmitInput button = page.getFirstByXPath("//div[contains(@class, 'UILink')]"); 
-//        page = button.click();
-//        
-//        HtmlInput inputBox = page.getFirstByXPath("//div[contains(@class, 'ImportTerms-textarea')]"); 
-//        inputBox.setValueAttribute(quizletText);
-//	    
-//        HtmlInput separatorBox = page.getFirstByXPath("//div[contains(@class, 'UIInput-input')]"); 
-//	    separatorBox.setValueAttribute("---");
-//
-//        HtmlSubmitInput importButton = page.getFirstByXPath("//div[contains(@class, 'UIButton UIButton--hero')]"); 
-//        page = importButton.click();
-//        
-//        HtmlInput titleBox = page.getFirstByXPath("//div[contains(@class, 'AutoExpandTextarea-wrapper')]"); 
-//	    titleBox.setValueAttribute("AP Gov: Unit Test Vocab");
-        
-//        HtmlSubmitInput importButton = page.getFirstByXPath("//div[contains(@class, 'UIButton UIButton--hero')]"); 
-//        page = importButton.click();
-
-//        webClient.close();
 	}
 }
