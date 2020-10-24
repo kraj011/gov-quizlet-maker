@@ -4,4 +4,4 @@ gov-quizlet-maker is a quick and simple personal tool for automating Quizlet cre
 The results can be found [here](https://quizlet.com/eugenebaba314).
 
 ## TODO:
-[] Add support to make GET requests for word definitions
+[ ] Add support to make GET requests for word definitions
