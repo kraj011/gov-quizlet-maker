@@ -1,10 +1,11 @@
 import java.util.*;
 import java.io.*;
 
+// Made by @eugli
 public class QuizletMaker
 {
 	public static void main(String[] args) throws IOException {
-		Map<String, String> wordDef = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+	    Map<String, String> wordDef = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 	    File file = new File("all-vocab.txt");
 	    File file2 = new File("vocab.txt");
 	    Scanner sc = new Scanner(file);
@@ -20,11 +21,13 @@ public class QuizletMaker
 		    line2 = sc.nextLine();
 		    	
 	    	if (everyOther) {
+			
 	    		everyOther = false;
 		      
 			    if (line.contains("(")) {
 			    	line = line.substring(0, line.indexOf("(") - 1);
 			    }
+			
 	    		wordDef.put(line, line2.substring(0, line2.length() - 1));
 	    	}
 	      
